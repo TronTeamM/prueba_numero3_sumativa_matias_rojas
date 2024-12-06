@@ -1,0 +1,253 @@
+/* Importar fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
+/* Estilo Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #e74c3c; /* Cambié el color de los títulos a un tono rojo cálido */
+}
+
+h1 {
+  font-size: 3rem; /* Títulos grandes */
+}
+
+h2 {
+  font-size: 2.5rem; /* Títulos medianos */
+}
+
+h3 {
+  font-size: 2rem; /* Títulos más pequeños */
+}
+
+h4, h5 {
+  font-size: 1.75rem; /* Títulos pequeños */
+}
+
+p {
+  font-size: 1.1rem; /* Mejor tamaño de texto para párrafos */
+  color: #7f8c8d; /* Color gris suave para los párrafos */
+  line-height: 1.8; /* Mejor altura de línea para facilitar la lectura */
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+}
+
+/* Estilo para los títulos de las tarjetas (Servicios, Técnicos) */
+.card h3, .tecnico-card-title, .servicio-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #e74c3c; /* Títulos en rojo cálido para que resalten */
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Tamaño moderado para los títulos dentro de tarjetas */
+}
+
+.card p, .tecnico-card-description, .servicio-card-description {
+  color: #7f8c8d; /* Color gris para descripciones */
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6; /* Mejor legibilidad para el texto */
+}
+
+/* Estilo para los botones (resaltado de texto) */
+.card-footer button, .tecnico-card-footer button, .servicio-card-footer button,
+button.detalle-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase; /* Botones en mayúsculas */
+  color: #e67e22; /* Color anaranjado para los botones */
+}
+
+/* Modal de Detalles - Cambios en el texto */
+.inicio-details-modal .modal-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #8e44ad; /* Título del modal en un tono morado suave */
+  margin-bottom: 20px;
+}
+
+.inicio-details-modal .modal-body {
+  font-size: 1.1rem;
+  color: #34495e; /* Texto gris oscuro para el contenido del modal */
+  margin-bottom: 30px;
+}
+
+.inicio-details-modal .close-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Sección destacada */
+.section-highlight h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #2c3e50; /* Color del título de la sección */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-highlight p {
+  font-size: 1.1rem;
+  color: #7f8c8d; /* Color gris suave para el texto */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Reducir tamaño de título para pantallas pequeñas */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem; /* Reducir tamaño de texto para pantallas pequeñas */
+  }
+
+  .card, .tecnico-card, .servicio-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section-highlight h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Estilo para las secciones específicas */
+#ubicanos, #contactanos, #solicitud-contacto, #servicio {
+  background-color: #fff;
+  border: 2px solid #e74c3c; /* Borde rojo alrededor de las secciones */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 30px; /* Espaciado interno */
+  margin: 20px 0; /* Espaciado entre secciones */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos de cada sección */
+#ubicanos h2, #contactanos h2, #solicitud-contacto h2, #servicio h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #e74c3c; /* Color de los títulos en un rojo suave */
+  margin-bottom: 20px;
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: capitalize; /* Títulos con mayúsculas iniciales */
+}
+
+/* Párrafos dentro de cada sección */
+#ubicanos p, #contactanos p, #solicitud-contacto p, #servicio p {
+  font-size: 1.1rem;
+  color: #7f8c8d; /* Color gris suave para los párrafos */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify; /* Alineación justificada para mejor lectura */
+}
+
+/* Botones dentro de las secciones */
+#ubicanos button, #contactanos button, #solicitud-contacto button, #servicio button {
+  background-color: #e67e22; /* Botones en un tono naranja */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: 2px solid #e67e22;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase; /* Botones en mayúsculas */
+}
+
+/* Efecto hover para los botones */
+#ubicanos button:hover, #contactanos button:hover, #solicitud-contacto button:hover, #servicio button:hover {
+  background-color: #d35400;
+  border-color: #d35400; /* Cambiar color del borde cuando se pasa el mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  #ubicanos, #contactanos, #solicitud-contacto, #servicio {
+    padding: 20px; /* Reducir padding en pantallas pequeñas */
+  }
+
+  #ubicanos h2, #contactanos h2, #solicitud-contacto h2, #servicio h2 {
+    font-size: 1.8rem; /* Reducir tamaño de título en pantallas pequeñas */
+  }
+
+  #ubicanos p, #contactanos p, #solicitud-contacto p, #servicio p {
+    font-size: 1rem; /* Reducir tamaño de texto en pantallas pequeñas */
+  }
+}
+
+/* Estilo para el modal */
+.inicio-details-modal .modal-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #2c3e50; /* Color gris oscuro claro para el texto */
+    line-height: 1.8; /* Mejor altura de línea para mayor legibilidad */
+    margin-bottom: 30px;
+  }
+  
+  .inicio-details-modal .modal-body p {
+    color: #34495e; /* Gris oscuro más suave para los párrafos */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .inicio-details-modal .modal-body b {
+    font-size: 1.3rem;
+    color: #e67e22; /* Un naranja cálido para el precio */
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .inicio-details-modal .modal-body ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #7f8c8d; /* Gris claro para las listas */
+    font-size: 1.1rem;
+  }
+  
+  .inicio-details-modal .modal-body ul li {
+    margin-bottom: 10px;
+  }
+  
